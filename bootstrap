@@ -26,10 +26,6 @@ wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearc
 dpkg -i /tmp/elasticsearch.deb
 rm /tmp/elasticsearch.deb
 
-# These configurations are for a large, 192GB Dell R720. You'll need to adjust
-# them for use on any smaller systems.
-#cp $ROOT/etc/elasticsearch/elasticsearch.yml .
-#cp $ROOT/default/elasticsearch /etc/default/elasticsearch
 /etc/init.d/elasticsearch start
 
 # Logstash is just a jar and requires some additional configs
